@@ -1,0 +1,17 @@
+image: node:18.15.0-alpine3.17
+
+# before_script:
+#   - npm i --production --force
+
+pages:
+    stage: deploy
+    script:
+        - npm install --force
+        - npm run build
+        - cp -a build/. public/
+        - echo '/* /index.html 200' > public/_redirects
+    artifacts:
+        paths:
+            - public
+    only:
+        - main

@@ -1,0 +1,68 @@
+.content-container{
+    height: 100vh;
+    
+    .grid-container{
+        height: 100%;
+    }
+    .side-bar-box{
+        height: 100%;
+        background: #fff;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 320px;
+        .din-icons{
+            width: 24px;
+            height: 24px;
+            border: 1px solid #000000DE;
+            padding: 4px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .MuiTabs-vertical{
+            height: 100%;
+            padding-left: 16px;
+            .MuiTab-root{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start ;
+                flex-direction: row;
+                color: #252525;
+                font-size: 18px;
+                font-weight: 500;
+                svg{
+                    fill: #252525;
+                    font-size: 24px;
+                }
+            }
+            button{
+                padding: 0px;
+                font-size: 14px !important;
+                font-weight: 400;
+                padding-left: 15px;
+                border-left: 4px solid transparent;
+            }
+            .Mui-selected{
+                border-right: none !important;
+                font-weight: 600;
+                border-color: #1D617A;
+                color: #1D617A;
+                svg{
+                    fill: #1D617A;
+                }
+            }
+        }
+        .sidebar-logo{
+            padding: 1rem 0rem;
+            img{
+                width: 200px;
+            }
+        }
+        .side-bar-barcode{
+            position: absolute;
+            bottom: 32px;
+            left: 0px;
+        }
+    }
+}

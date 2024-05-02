@@ -1,0 +1,13 @@
+.tabel-container-box{
+    height: 100%;
+    .MuiDataGrid-row{
+        min-height: auto !important;
+        max-height: 100px !important;
+        height: 70px;
+        align-items: center;
+        .MuiDataGrid-cell{
+            max-height: 100px !important;
+            height: 100% !important;
+        }
+    }
+}
